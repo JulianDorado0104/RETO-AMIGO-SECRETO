@@ -33,4 +33,17 @@ function agregarAmigo() {
     limpiarResultado();
 }
 
+// Selecciona aleatoriamente un nombre de la lista y lo muestra en pantalla.
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert('Agrega al menos un nombre antes de sortear.');
+        return;
+    }
+
+    const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+    const nombreSeleccionado = amigos[indiceAleatorio];
+
+    resultadoSorteo.innerHTML = `<li>El amigo secreto es: ${nombreSeleccionado}</li>`;
+}
+
 
