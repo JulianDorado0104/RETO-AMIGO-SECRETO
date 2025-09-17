@@ -6,3 +6,12 @@ const inputNombre = document.getElementById('amigo');
 const listaAmigos = document.getElementById('listaAmigos');
 const resultadoSorteo = document.getElementById('resultado');
 
+// Refrescamos el contenido de  la lista de amigos.
+function actualizarLista() {
+    listaAmigos.innerHTML = amigos
+        .map((nombre) => `<li>${nombre}</li>`)
+        .join('');
+}
+
+
+
