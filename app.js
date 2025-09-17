@@ -18,4 +18,19 @@ function limpiarResultado() {
     resultadoSorteo.innerHTML = '';
 }
 
+// validamos  que el campo de texto no este vacio.
+function agregarAmigo() {
+    const nombre = inputNombre.value.trim();
+
+    if (!nombre) {
+        alert('Por favor, ingresa un nombre valido.');
+        return;
+    }
+
+    amigos.push(nombre);
+    inputNombre.value = '';
+    actualizarLista();
+    limpiarResultado();
+}
+
 
