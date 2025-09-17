@@ -13,5 +13,9 @@ function actualizarLista() {
         .join('');
 }
 
+// Borramos  cualquier resultado cuando agregamos nuevos nombres.
+function limpiarResultado() {
+    resultadoSorteo.innerHTML = '';
+}
 
 
